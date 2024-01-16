@@ -2,6 +2,60 @@ body{
     width:100%;
     height:100vh;
     background-color: #f5f2ec;
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+}
+
+.top_bar{
+    background-color:	#9400D3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_bar a{
+    font-size: 20px;
+    color: #fff;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: None;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.bottom_bar{
+    position: fixed;
+    bottom: 0;
+    background-color:	#9400D3;
+    width: 100%;
+}
+
+.contact_container{
+    font-size: 15px;
+    color: #fff;
+    font-family: inherit;
+    text-decoration: None;
+    text-align:center;
+    font-weight: 700;
+    padding-top: 16px;
+}
+
+.contact_container div{
+    padding-bottom: 2px;
+}
+
+.social-icons{
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.social-icon{
+    font-size: 24px;
+    padding: 8px;
 }
 
 
