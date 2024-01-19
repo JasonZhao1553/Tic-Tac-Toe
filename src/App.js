@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// Import necessary React modules
+import React, { useState } from 'react';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+import Play from './pages/Play'
+import './index.css'
 
-function App() {
+// Functional Component representing your Tic Tac Toe app
+export default function App(){
+  // Function to toggle the display of the modal container
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <div>
+     <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} /> 
+          <Route path = "/home" index element={<Home />} />
+          <Route path = "/play" index element={<Play />} />
+        </Routes>
+     </BrowserRouter>
+  </div>
+  )
+};
 
-export default App;
