@@ -14,7 +14,6 @@ export default function Play(){
     }, [])
 
     const game_mode = gamemode_state.gamemode;
-    console.log(game_mode);
 
     const getRules = () => {
         alert("Get three in a row.")
